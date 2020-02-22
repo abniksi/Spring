@@ -17,4 +17,14 @@ public class TrackCoach implements Coach {
 	public String getDailyFortune() {
 		return "Just Do It: " + fortuneService.getFortune();
 	}
+	
+	//add init method (called hooks)
+	public void doMyStartupStuff() {
+		System.out.println("Birth of a Bean.");
+	}
+	
+	//add destroy method
+	public void doMyCleanupStuff() {
+		System.out.println("Destruction of bean occuring.");
+	}
 }
